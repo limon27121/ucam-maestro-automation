@@ -1,0 +1,58 @@
+appId: com.android.chrome
+---
+- assertVisible: Image
+- assertVisible: Student Home
+- assertVisible: Logout
+- assertVisible:
+    id: navbar
+- tapOn: Toggle navigation
+- assertVisible:
+    id: bs-example-navbar-collapse-1
+- tapOn: Toggle navigation
+
+- scroll
+
+#Check floating section
+
+- assertVisible: "Transcript CGPA: 3.29"
+- assertVisible: "Completed Credit: 138"
+- assertVisible: "Current Balance: 0 Tk."
+- assertVisible: For online payment
+
+- assertVisible: Important Announcement
+- assertVisible: Notice
+- assertVisible:
+    id: f_all_notice
+- scroll
+
+- assertVisible: Class Routine
+- assertVisible: Profile
+- scroll
+- assertVisible:
+    id: ctl00_MainContainer_SI_Image
+- assertVisible: Md. Moontaseralam
+- assertVisible:
+    text: "011171060"
+    index: 1
+- assertVisible: Information
+- assertVisible: DOB
+- assertVisible: Phone
+- assertVisible: Mother's Name
+- scroll
+- assertVisible: Father's Name
+
+- assertVisible: Advisor Information
+- assertVisible:
+    id: advisor
+- scroll
+- assertVisible: Attendance Summary
+- assertVisible: Interactive chart
+- assertVisible: View chart menu
+- scroll
+- assertVisible: Result Summary
+- assertVisible:
+    text: View chart menu
+    index: 1
+- assertVisible:
+    text: Interactive chart
+    index: 1

@@ -1,17 +1,24 @@
 appId: com.android.chrome
 ---
 - tapOn: Chrome
+#click on searchbox from google
 - tapOn:
     id: search_box_text
 - inputText: "https://ucam.uiu.ac.bd/Security/LogIn.aspx"
+#Tap on enter key from the keyboard
 - tapOn:
     id: 0_resource_name_obfuscated
     index: 48
+
+- assertVisible: uiu_logo_update
+- assertVisible: Login
+#Give the user-name and password
 - tapOn:
     id: logMain_UserName
 - inputText: "011171060"
 - tapOn:
     id: logMain_Password
 - inputText: "2353"
+#Click on Log-in Button
 - tapOn:
     id: logMain_Button1

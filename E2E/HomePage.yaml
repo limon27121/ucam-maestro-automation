@@ -1,10 +1,12 @@
 appId: com.android.chrome
 ---
+#Upper Section test
 - assertVisible: Image
 - assertVisible: Student Home
 - assertVisible: Logout
 - assertVisible:
     id: navbar
+#Test navbar togggle
 - tapOn: Toggle navigation
 - assertVisible:
     id: bs-example-navbar-collapse-1

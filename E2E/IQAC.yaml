@@ -1,0 +1,11 @@
+appId: com.android.chrome
+---
+- tapOn: IQAC
+- assertVisible:
+    text: Home
+    index: 1
+- assertVisible: UCAM
+- assertVisible: Institutional Quality Assurance Cell (IQAC)
+- assertVisible:
+    id: aspnetForm
+- tapOn: UCAM

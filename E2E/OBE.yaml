@@ -1,0 +1,7 @@
+appId: com.android.chrome
+---
+- tapOn: OBE
+- assertVisible:
+    id: upMain
+#force back to previous page
+- back

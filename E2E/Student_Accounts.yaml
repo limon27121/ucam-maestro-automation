@@ -1,0 +1,50 @@
+appId: com.android.chrome
+---
+- tapOn: Toggle navigation
+- assertVisible: Student Accounts
+- tapOn: Student Accounts
+- assertVisible:
+    id: navbar
+- tapOn: Toggle navigation
+- tapOn: Payment
+- assertVisible: Student Bill & Payment
+- tapOn: Student Bill & Payment
+- assertVisible: Student Bill & Payment History
+- scrollUntilVisible:
+    element:
+      id: ctl00_MainContainer_UpdatePanel1
+    direction: DOWN
+- scrollUntilVisible:
+    element:
+      id: ctl00_MainContainer_pnlOnlinePayment
+    direction: DOWN
+- assertVisible: Pay Online »
+
+- scrollUntilVisible:
+    element:
+      id: Table1
+    direction: DOWN
+- assertVisible:
+    id: Table1
+- assertVisible:
+    id: ctl00_MainContainer_UpdatePanel3
+- scroll
+
+# - scrollUntilVisible:
+#     element:
+#       id: ctl00_A1
+#     direction: UP
+# - tapOn: Home
+# - swipe:
+#     from:
+#       id: ctl00_A1
+#     direction: UP
+
+#it scrool up intil see the home text
+- repeat:
+    times: 2
+    commands:
+      - swipe:
+          start: 50%, 20%
+          end: 50%, 80%
+- tapOn: "Home"

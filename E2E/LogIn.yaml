@@ -19,6 +19,7 @@ appId: com.android.chrome
 - tapOn:
     id: logMain_Password
 - inputText: "2353"
+- tapOn: Back
 #Click on Log-in Button
 - tapOn:
     id: logMain_Button1

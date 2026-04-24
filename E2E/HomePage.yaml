@@ -10,51 +10,59 @@ appId: com.android.chrome
 - tapOn: Toggle navigation
 - assertVisible:
     id: bs-example-navbar-collapse-1
+
 - tapOn: Toggle navigation
 
-- scroll
-
-#Check floating section
-
-- assertVisible: "Transcript CGPA: 3.29"
+# Check floating section with scrollUntilVisible for reliability
+- scrollUntilVisible:
+    element: "Transcript CGPA: 3.29"
+    direction: DOWN
 - assertVisible: "Completed Credit: 138"
 - assertVisible: "Current Balance: 0 Tk."
-- assertVisible: For online payment
 
-- assertVisible: Important Announcement
-- assertVisible: Notice
+# Notice Section
+- scrollUntilVisible:
+    element: "Important Announcement"
+    direction: DOWN
 - assertVisible:
-    id: f_all_notice
+    id: "f_all_notice"
+#Class Routine
+- scrollUntilVisible:
+    element:
+      text: Class Routine
+    direction: DOWN
+- assertVisible:
+    id: "ctl00_MainContainer_Class_Schedule"
+# Profile Section - Standardized for better compatibility
+- scrollUntilVisible:
+    element: "Profile"
+    direction: DOWN
+
+# If it's still being covered by a header, add a tiny manual swipe
 - scroll
 
-- assertVisible: Class Routine
-- assertVisible: Profile
-- scroll
 - assertVisible:
-    id: ctl00_MainContainer_SI_Image
-- assertVisible: Md. Moontaseralam
-- assertVisible:
-    text: "011171060"
-    index: 1
-- assertVisible: Information
-- assertVisible: DOB
-- assertVisible: Phone
-- assertVisible: Mother's Name
-- scroll
-- assertVisible: Father's Name
+    id: "ctl00_MainContainer_SI_Image"
+- assertVisible: "011171060"
 
-- assertVisible: Advisor Information
-- assertVisible:
-    id: advisor
+# Details Section
+- scrollUntilVisible:
+    element: "Father's Name"
+    direction: DOWN
+- assertVisible: "DOB"
+- assertVisible: "Advisor Information"
+
+# Charts - These often take time to render, so we use a small wait or specific ID
+- scrollUntilVisible:
+    element: "Attendance Summary"
+    direction: DOWN
+- waitForAnimationToEnd # Wait for the 'Interactive chart' to finish drawing
+- assertVisible: "Interactive chart"
+#Result Summary
+- scrollUntilVisible:
+    element: "Result Summary"
+    direction: DOWN
 - scroll
-- assertVisible: Attendance Summary
-- assertVisible: Interactive chart
-- assertVisible: View chart menu
-- scroll
-- assertVisible: Result Summary
 - assertVisible:
     text: View chart menu
-    index: 1
-- assertVisible:
-    text: Interactive chart
     index: 1

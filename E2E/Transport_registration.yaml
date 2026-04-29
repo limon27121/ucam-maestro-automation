@@ -1,0 +1,9 @@
+appId: com.android.chrome
+---
+- tapOn: Toggle navigation
+- assertVisible: Transport Registration
+- tapOn: Transport Registration
+- assertVisible:
+    id: aspnetForm
+- assertVisible: Logout
+- tapOn: Home

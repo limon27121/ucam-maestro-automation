@@ -1,0 +1,19 @@
+appId: com.android.chrome
+---
+- tapOn: Toggle navigation
+- assertVisible: Apply
+- tapOn: Apply
+- tapOn: "Copyright © 2013 - "
+- assertVisible: Student Application for Incomplete Transcript
+- assertVisible: "Student ID:"
+- assertVisible: Incomplete Transcript Apply
+- assertVisible:
+    id: ctl00_MainContainer_UpdatePanel4
+- assertVisible:
+    id: aspnetForm
+- assertVisible: Apply for Incomplete Transcript
+- assertVisible:
+    text: Apply
+    index: 1
+- assertVisible: Application Status
+- back

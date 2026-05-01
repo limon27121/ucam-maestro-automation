@@ -1,0 +1,22 @@
+appId: com.android.chrome
+---
+- assertVisible: Provisional Certificate and Official Transcript
+- tapOn: Provisional Certificate and Official Transcript
+- assertVisible:
+    id: aspnetForm
+- assertVisible: Student Application for Provisional Certificate and Official Transcript
+- assertVisible: Enter Student ID
+
+- assertVisible: "Student Name :"
+- assertVisible: "CGPA :"
+- assertVisible: "Contact No :"
+- assertVisible: Apply For Certificate & Transcript
+- assertVisible:
+    text: Apply
+    index: 1
+- assertVisible: Application Status
+- assertVisible: Approval Detail
+- tapOn: Approval Detail
+- assertVisible: DSA Clearance
+- tapOn: Close
+- back

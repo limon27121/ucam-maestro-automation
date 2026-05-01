@@ -1,0 +1,17 @@
+appId: com.android.chrome
+---
+- tapOn: Toggle navigation
+- assertVisible: Admin Control
+- tapOn: Admin Control
+- tapOn: Toggle navigation
+- assertVisible: User Mgt.
+- tapOn: User Mgt.
+- assertVisible: Change Password
+- tapOn: Change Password
+- assertVisible: Password Change (User)
+- assertVisible:
+    id: aspnetForm
+- assertVisible:
+    id: MasterBody
+- assertVisible: Update
+- back

@@ -1,0 +1,8 @@
+appId: com.android.chrome
+---
+- tapOn: Toggle navigation
+- assertVisible: COE
+- tapOn: COE
+- tapOn: Toggle navigation
+- assertVisible: Apply
+- tapOn: Apply

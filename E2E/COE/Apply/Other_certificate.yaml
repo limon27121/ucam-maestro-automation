@@ -1,0 +1,20 @@
+appId: com.android.chrome
+---
+- tapOn: Toggle navigation
+- assertVisible: Apply
+- tapOn: Apply
+- assertVisible: Studentship, Testimonial or any other Certificate
+- tapOn: Studentship, Testimonial or any other Certificate
+- assertVisible: Student Application for Studentship, Testimonial or any other Certificate
+- assertVisible: "Student ID:"
+- assertVisible:
+    id: aspnetForm
+- assertVisible:
+    id: ctl00_MainContainer_Label1
+- assertVisible: Apply for Studentship, Testimonial or any other Certificate
+- assertVisible:
+    text: Apply
+    index: 1
+- assertVisible: Application Status
+- back
+- tapOn: Home

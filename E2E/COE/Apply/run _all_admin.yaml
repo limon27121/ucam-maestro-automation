@@ -1,0 +1,8 @@
+appId: com.android.chrome
+---
+- runFlow: Certificate.yaml
+- runFlow: Duplicate_transcript.yaml
+- runFlow: Incomplete_transcript.yaml
+- runFlow: Other_certificate.yaml
+
+

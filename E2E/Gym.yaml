@@ -1,0 +1,14 @@
+appId: com.android.chrome
+---
+- tapOn: Toggle navigation
+- assertVisible: GYM Registration
+- tapOn: GYM Registration
+- assertVisible: Gym Enrollment
+
+- assertVisible:
+    id: aspnetForm
+- assertVisible:
+    id: MasterBody
+- assertVisible: "Student ID :"
+- assertVisible: "Name :"
+- back

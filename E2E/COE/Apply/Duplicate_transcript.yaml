@@ -1,0 +1,20 @@
+appId: com.android.chrome
+---
+- tapOn: Toggle navigation
+- assertVisible: Apply
+- tapOn: Apply
+- assertVisible: Duplicate Transcript
+- tapOn: Duplicate Transcript
+- assertVisible: Student Application for Duplicate Transcript
+- assertVisible: Enter Student ID
+- assertVisible:
+    id: aspnetForm
+- assertVisible:
+    id: MasterBody
+- assertVisible: -Select Number of Copies-
+- assertVisible: Apply for Duplicate Transcript
+- assertVisible:
+    text: Apply
+    index: 1
+- assertVisible: Application Status
+- back

@@ -1,0 +1,11 @@
+appId: com.android.chrome
+---
+- runFlow: ../E2E/LogIn.yaml
+- runFlow: ../E2E/HomePage.yaml
+- runFlow: ../E2E/IQAC.yaml
+- runFlow: ../E2E/OBE.yaml
+- runFlow: ../E2E/Gym.yaml
+- runFlow: ../E2E/Student_account.yaml
+- runFlow: ../E2E/Transport_registration.yaml
+- runFlow: ../E2E/COE/COE.yaml
+- runFlow: ../E2E/COE/Apply/run _all_admin.yaml

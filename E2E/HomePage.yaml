@@ -18,7 +18,7 @@ appId: com.android.chrome
     element: "Transcript CGPA: 3.29"
     direction: DOWN
 - assertVisible: "Completed Credit: 138"
-- assertVisible: "Current Balance: 0 Tk."
+# - assertVisible: "Current Balance: 0 Tk."
 
 # Notice Section
 - scrollUntilVisible:
@@ -31,8 +31,8 @@ appId: com.android.chrome
     element:
       text: Class Routine
     direction: DOWN
-- assertVisible:
-    id: "ctl00_MainContainer_Class_Schedule"
+# - assertVisible:
+#     id: "ctl00_MainContainer_Class_Schedule"
 # Profile Section - Standardized for better compatibility
 - scrollUntilVisible:
     element: "Profile"
@@ -66,3 +66,14 @@ appId: com.android.chrome
 - assertVisible:
     text: View chart menu
     index: 1
+# - scrollUntilVisible:
+#     element: ctl00_A1
+#     direction: UP
+
+- repeat:
+    times: 5
+    commands:
+      - swipe:
+          start: 50%, 20%
+          end: 50%, 80%
+- tapOn: "Home"

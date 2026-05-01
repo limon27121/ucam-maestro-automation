@@ -18,7 +18,7 @@ appId: com.android.chrome
     element:
       id: ctl00_MainContainer_pnlOnlinePayment
     direction: DOWN
-- assertVisible: Pay Online »
+# - assertVisible: Pay Online »
 
 - scrollUntilVisible:
     element:

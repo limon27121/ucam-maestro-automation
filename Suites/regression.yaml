@@ -9,3 +9,5 @@ appId: com.android.chrome
 - runFlow: ../E2E/Transport_registration.yaml
 - runFlow: ../E2E/COE/COE.yaml
 - runFlow: ../E2E/COE/Apply/run _all_admin.yaml
+- runFlow: ../E2E/Result.yaml
+- runFlow: ../E2E/Scheduler.yaml

@@ -1,0 +1,16 @@
+appId: com.android.chrome
+---
+- tapOn: Toggle navigation
+
+- tapOn: Registration
+- tapOn: Toggle navigation
+- assertVisible: Course Evaluation
+- tapOn: Course Evaluation
+- assertVisible: Evaluation Form
+- tapOn: Evaluation Form
+- assertVisible:
+    id: aspnetForm
+- assertVisible:
+    id: MasterBody
+- assertVisible: Course Evaluation Form
+- tapOn: Toggle navigation

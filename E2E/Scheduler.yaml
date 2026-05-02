@@ -1,0 +1,18 @@
+appId: com.android.chrome
+---
+- tapOn: Toggle navigation
+
+- assertVisible: Scheduler
+- tapOn: Scheduler
+- tapOn: Toggle navigation
+- assertVisible: Weekly Routine Viewer
+- tapOn: Weekly Routine Viewer
+- assertVisible:
+    id: aspnetForm
+- assertVisible:  Routine Viewer
+- assertVisible: "Academic Calendar:"
+- assertVisible: 261 - Spring 2026
+- assertVisible: "Search Person:"
+- assertVisible: -- Select Person --
+- back
+- tapOn: Home

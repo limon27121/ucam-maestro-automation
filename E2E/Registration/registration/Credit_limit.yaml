@@ -1,0 +1,15 @@
+appId: com.android.chrome
+---
+- assertVisible: Registration
+- tapOn: Registration
+- assertVisible: Credit Limit Increase Request
+- tapOn: Credit Limit Increase Request
+- assertVisible: Credit Limit Increase Request By Student
+- assertVisible:
+    id: ctl00_MainContainer_UpdatePanel1
+- scroll
+- assertVisible: New Request
+- scrollUntilVisible:
+    element: Home
+    direction: UP
+- tapOn: Toggle navigation

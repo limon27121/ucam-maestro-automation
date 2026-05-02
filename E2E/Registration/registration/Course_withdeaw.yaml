@@ -1,0 +1,10 @@
+appId: com.android.chrome
+---
+- tapOn: Registration
+- assertVisible: Course Withdraw Request (New)
+- tapOn: Course Withdraw Request (New)
+
+- assertVisible: Course Withdraw Request By Student
+- assertVisible:
+    id: ctl00_MainContainer_UpdatePanel1
+- tapOn: Toggle navigation

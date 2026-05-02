@@ -1,0 +1,10 @@
+appId: com.android.chrome
+---
+- assertVisible: Registration
+- tapOn: Registration
+- assertVisible: Course Open Request
+- tapOn: Course Open Request
+- assertVisible: Course Open Request By Student
+- assertVisible:
+    id: ctl00_MainContainer_UpdatePanel1
+- tapOn: Toggle navigation

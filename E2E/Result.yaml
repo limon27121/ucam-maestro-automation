@@ -1,0 +1,25 @@
+appId: com.android.chrome
+---
+- tapOn: Toggle navigation
+
+- assertVisible: Result
+- tapOn: Result
+- tapOn: Toggle navigation
+- assertVisible: Marks
+- tapOn: Marks
+- assertVisible: Assessment Wise Details Marks sheet (Without Final)
+- assertVisible:
+    id: aspnetForm
+- assertVisible:
+    id: MasterBody
+- assertVisible:
+    id: ctl00_MainContainer_divMain
+- assertVisible: |-
+    ×
+    Select
+- tapOn: |-
+    ×
+    Select
+- tapOn: Back
+- back
+- tapOn: Home

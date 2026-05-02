@@ -1,0 +1,27 @@
+appId: com.android.chrome
+---
+- assertVisible: Registration
+- tapOn: Registration
+- assertVisible: Section Selection & Registration (Student)
+- tapOn: Section Selection & Registration (Student)
+- assertVisible: ucam.uiu.ac.bd says
+- assertVisible: Your status is Inactive. Please contact with Department
+- assertVisible:
+    id: tab_modal_dialog_container
+- tapOn: OK
+- assertVisible:
+    id: ctl00_MainContainer_MainPanel
+
+- scroll
+- assertVisible:
+    id: ctl00_MainContainer_UpdatePanel2
+- assertVisible: Section Selection
+- assertVisible: Final Registration
+- assertVisible:
+    text: Registration
+    index: 1
+- scrollUntilVisible:
+    element:
+      text: Home
+    direction: UP
+- tapOn: Toggle navigation

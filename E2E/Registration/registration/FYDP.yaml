@@ -1,0 +1,6 @@
+appId: com.android.chrome
+---
+- tapOn: Registration
+
+- assertVisible: FYDP Group Submission
+- tapOn: FYDP Group Submission
